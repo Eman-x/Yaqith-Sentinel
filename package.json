@@ -1,0 +1,36 @@
+{
+  "name": "yaqith-sentinel",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "AI-powered adaptive authentication command center for Saudi Arabia's Absher platform — behavioral biometrics, real-time threat monitoring, and zero-trust risk scoring.",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "seed": "node scripts/seed-database.mjs",
+    "seed:stats": "node scripts/show-seed-stats.mjs",
+    "seed:verify": "node scripts/verify-seed-data.mjs"
+  },
+  "dependencies": {
+    "@google/genai": "^1.30.0",
+    "@supabase/supabase-js": "^2.87.1",
+    "@types/leaflet": "^1.9.21",
+    "leaflet": "^1.9.4",
+    "lucide-react": "^0.555.0",
+    "prop-types": "^15.8.1",
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0",
+    "react-is": "^19.2.1",
+    "react-leaflet": "^5.0.0",
+    "recharts": "^3.5.1"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.57.0",
+    "@types/node": "^22.14.0",
+    "@vitejs/plugin-react": "^5.0.0",
+    "dotenv": "^17.2.3",
+    "typescript": "~5.8.2",
+    "vite": "^6.2.0"
+  }
+}
