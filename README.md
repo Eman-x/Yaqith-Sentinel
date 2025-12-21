@@ -1,0 +1,157 @@
+# YAQITH Sentinel
+
+[![Hackathon](https://img.shields.io/badge/Absher_Tuwaiq-Hackathon_2025-006C5B?style=flat-square)](https://absher.tuwaiq.edu.sa/)
+[![Vision 2030](https://img.shields.io/badge/Saudi_Vision-2030-C6A664?style=flat-square)](https://www.vision2030.gov.sa/)
+![React](https://img.shields.io/badge/React-19-61DAFB?style=flat-square&logo=react&logoColor=white)
+![TypeScript](https://img.shields.io/badge/TypeScript-5.8-3178C6?style=flat-square&logo=typescript&logoColor=white)
+![Vite](https://img.shields.io/badge/Vite-6-646CFF?style=flat-square&logo=vite&logoColor=white)
+![Supabase](https://img.shields.io/badge/Supabase-realtime-3FCF8E?style=flat-square&logo=supabase&logoColor=white)
+
+---
+
+> An AI-powered adaptive authentication **command center** for Saudi Arabia's national
+> identity platform, **Absher**. YAQITH shifts login security from *"what you know"*
+> (passwords, OTPs) to *"who you are"* (behavior) — so that even a stolen credential
+> doesn't get an impostor through. Built by **Team SANAM** for the
+> [Absher Tuwaiq Hackathon 2025](https://absher.tuwaiq.edu.sa/), and paired with a
+> behavioral-AI analysis notebook over ~500 synthetic login events.
+
+> *يقظ — "vigilant".*
+
+## Overview
+
+---
+
+> Traditional authentication trusts a credential the moment it matches. But passwords are
+> phished, OTPs are SIM-swapped, and a correct login from the wrong person looks identical
+> to a correct login from the right one. YAQITH treats **every** session as untrusted until
+> behavior proves otherwise — a zero-trust posture for e-government scale.
+
+The system reads real-time signals — device identity, IP and location, typing cadence,
+navigation timing, login history — scores the risk of each attempt, and adapts its response:
+**allow**, **step-up challenge**, or **block**. This repository is the **admin command
+center**: a single-page React dashboard where a security operator monitors that decision
+flow live.
+
+| Layer | What it answers |
+|-------|-----------------|
+| Signals | Who is this device, from where, behaving how? |
+| Risk scoring | How likely is this the genuine user, right now? |
+| Adaptive response | Allow silently, challenge, or block — and why? |
+
+## Features
+
+---
+
+**Command Center**
+
+| Module | Description |
+|--------|-------------|
+| **Live Monitor** | Real-time feed of authentication attempts with risk indicators |
+| **Threat Analytics** | Blocked-attempt statistics, anomalies, and trends across 24H / 7D / 30D |
+| **Geo Map** | Interactive map of login attempts across Saudi cities and abroad |
+| **Decision Engine** | Visual flow of how risk factors combine into an allow/challenge/block decision |
+| **Risk Policies** | Configurable thresholds and response rules |
+
+**Interactive Labs**
+
+| Module | Description |
+|--------|-------------|
+| **Biometrics Lab** | Live behavioral-biometrics demo — typing cadence and mouse linearity, human vs. bot |
+| **ZKP Visualizer** | Zero-Knowledge Proof flow — verify identity without exposing the secret |
+
+## Behavioral AI
+
+---
+
+> [`YAQITH_Sentinel_–_Behavioral_AI_Security_Agent.ipynb`](./YAQITH_Sentinel_%E2%80%93_Behavioral_AI_Security_Agent.ipynb)
+
+The notebook is the analytical backbone behind the dashboard's risk scoring. Working from a
+synthetic dataset of login events ([`yaqith_sentinel_synthetic_logins_All.xlsx`](./yaqith_sentinel_synthetic_logins_All.xlsx)),
+it explores how genuine and anomalous logins differ across the seven scenarios the product
+models — normal login, new device, suspicious time, location anomaly, rapid login,
+behavioral deviation, and continuous monitoring — and frames the features that drive the
+allow / challenge / block decision.
+
+## Tech Stack
+
+---
+
+| Technology | Purpose |
+|------------|---------|
+| React 19 + TypeScript | Single-page dashboard UI |
+| Vite 6 | Dev server and build tooling |
+| Tailwind CSS | Styling (via CDN) |
+| Recharts | Threat-analytics charts |
+| Leaflet / react-leaflet | Interactive geo map |
+| Supabase | Real-time database and authentication |
+| Lucide React | Icon set |
+
+## Quick Start
+
+---
+
+**Prerequisites:** Node.js 18+ and a [Supabase](https://supabase.com) project (free tier is fine).
+
+```bash
+# Install dependencies
+npm install
+
+# Configure environment
+cp .env.example .env.local      # then fill in your Supabase URL + anon key
+
+# Run the dashboard
+npm run dev                     # → http://localhost:3010
+```
+
+**Seed demo data** — populate Supabase with ~500 synthetic authentication records:
+
+```bash
+npm run seed         # insert seed records
+npm run seed:verify  # validate what was inserted
+npm run seed:stats   # print the scenario distribution
+```
+
+## Project Structure
+
+---
+
+```
+├── App.tsx                # Sidebar nav + tab routing
+├── index.tsx              # React entry point
+├── types.ts               # RiskLevel, ScenarioType, Scenario, Storyboard
+├── constants.tsx          # Scenario definitions and mock data
+├── components/            # One component per dashboard page
+│   ├── LiveMonitor.tsx        # Real-time authentication feed
+│   ├── ThreatAnalytics.tsx    # Statistical threat analysis
+│   ├── GeoMap.tsx             # Geographic visualization
+│   ├── DecisionEngine.tsx     # Risk-decision flow
+│   ├── RiskPolicies.tsx       # Policy configuration
+│   ├── BiometricsDemo.tsx     # Behavioral-biometrics lab
+│   ├── ZKPLogin.tsx           # Zero-knowledge-proof visualizer
+│   └── ...
+├── lib/supabase.ts        # Supabase client
+├── scripts/               # Database seeding & verification
+├── seeds/                 # SQL that generates the seed dataset
+└── YAQITH_Sentinel_–_Behavioral_AI_Security_Agent.ipynb
+```
+
+## Team
+
+---
+
+Built by **Team SANAM** for the **Absher Tuwaiq Hackathon 2025**, organized by the Ministry
+of Interior and Tuwaiq Academy in support of **Saudi Vision 2030**.
+
+- Majd Alqarni
+- Eman Aldosari
+- Arwa Alkibari
+- Alwalah Awaji
+
+## License
+
+---
+
+Released under the [MIT License](./LICENSE).
+
+<p align="center"><em>YAQITH Sentinel — protecting digital identity through behavioral intelligence.</em></p>
