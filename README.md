@@ -21,7 +21,7 @@
 > behavioral-AI analysis notebook over ~500 synthetic login events.
 
 <p align="center">
-  <img src="assets/hero-dashboard.png" alt="YAQITH Sentinel dashboard — behavioral biometrics, identity confidence, and an adaptive login prompt" width="900"/>
+  <img src="assets/architecture.png" alt="YAQITH Sentinel system architecture — an Absher login request flows through the signal controller, ML pipeline, and AI agents engine to an allow / step-up / block decision, backed by Supabase and an admin dashboard" width="780"/>
 </p>
 
 ## Overview
