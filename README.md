@@ -18,6 +18,10 @@
 
 > *يقظ — "vigilant".*
 
+<p align="center">
+  <img src="assets/hero-dashboard.webp" alt="YAQITH Sentinel dashboard — behavioral biometrics, identity confidence, and an adaptive login prompt" width="900"/>
+</p>
+
 ## Overview
 
 ---
@@ -26,6 +30,10 @@
 > phished, OTPs are SIM-swapped, and a correct login from the wrong person looks identical
 > to a correct login from the right one. YAQITH treats **every** session as untrusted until
 > behavior proves otherwise — a zero-trust posture for e-government scale.
+
+<p align="center">
+  <img src="assets/problem-insight.webp" alt="The problem: static credentials fail silently. The insight: identity is a continuous signal." width="640"/>
+</p>
 
 The system reads real-time signals — device identity, IP and location, typing cadence,
 navigation timing, login history — scores the risk of each attempt, and adapts its response:
@@ -39,11 +47,15 @@ flow live.
 | Risk scoring | How likely is this the genuine user, right now? |
 | Adaptive response | Allow silently, challenge, or block — and why? |
 
+<p align="center">
+  <img src="assets/solution-architecture.webp" alt="The solution and intelligence pipeline: device signals flow through orchestration and a real-time decision engine into allow / challenge / block" width="560"/>
+</p>
+
 ## Features
 
 ---
 
-**Command Center**
+### Command Center
 
 | Module | Description |
 |--------|-------------|
@@ -53,12 +65,29 @@ flow live.
 | **Decision Engine** | Visual flow of how risk factors combine into an allow/challenge/block decision |
 | **Risk Policies** | Configurable thresholds and response rules |
 
-**Interactive Labs**
+<p align="center">
+  <img src="assets/command-center.webp" alt="Admin command center: live dashboard with threat analytics and biometrics panels" width="560"/>
+</p>
+
+### Decision Logic
+
+Every attempt is scored and routed down one of three explainable paths — low risk passes
+silently, medium risk triggers a step-up challenge, and high risk is blocked and flagged.
+
+<p align="center">
+  <img src="assets/decision-logic.webp" alt="Three-path decision logic: low risk silent allow, medium risk challenge, high risk instant block" width="700"/>
+</p>
+
+### Interactive Labs
 
 | Module | Description |
 |--------|-------------|
 | **Biometrics Lab** | Live behavioral-biometrics demo — typing cadence and mouse linearity, human vs. bot |
 | **ZKP Visualizer** | Zero-Knowledge Proof flow — verify identity without exposing the secret |
+
+<p align="center">
+  <img src="assets/zkp-privacy.webp" alt="Privacy by design: zero-knowledge-proof concept — verification without exposing the secret" width="640"/>
+</p>
 
 ## Behavioral AI
 
@@ -112,30 +141,6 @@ npm run seed:verify  # validate what was inserted
 npm run seed:stats   # print the scenario distribution
 ```
 
-## Project Structure
-
----
-
-```
-├── App.tsx                # Sidebar nav + tab routing
-├── index.tsx              # React entry point
-├── types.ts               # RiskLevel, ScenarioType, Scenario, Storyboard
-├── constants.tsx          # Scenario definitions and mock data
-├── components/            # One component per dashboard page
-│   ├── LiveMonitor.tsx        # Real-time authentication feed
-│   ├── ThreatAnalytics.tsx    # Statistical threat analysis
-│   ├── GeoMap.tsx             # Geographic visualization
-│   ├── DecisionEngine.tsx     # Risk-decision flow
-│   ├── RiskPolicies.tsx       # Policy configuration
-│   ├── BiometricsDemo.tsx     # Behavioral-biometrics lab
-│   ├── ZKPLogin.tsx           # Zero-knowledge-proof visualizer
-│   └── ...
-├── lib/supabase.ts        # Supabase client
-├── scripts/               # Database seeding & verification
-├── seeds/                 # SQL that generates the seed dataset
-└── YAQITH_Sentinel_–_Behavioral_AI_Security_Agent.ipynb
-```
-
 ## Team
 
 ---
@@ -143,8 +148,8 @@ npm run seed:stats   # print the scenario distribution
 Built by **Team SANAM** for the **Absher Tuwaiq Hackathon 2025**, organized by the Ministry
 of Interior and Tuwaiq Academy in support of **Saudi Vision 2030**.
 
+- Eman Alamari
 - Majd Alqarni
-- Eman Aldosari
 - Arwa Alkibari
 - Alwalah Awaji
 
@@ -154,4 +159,6 @@ of Interior and Tuwaiq Academy in support of **Saudi Vision 2030**.
 
 Released under the [MIT License](./LICENSE).
 
-<p align="center"><em>YAQITH Sentinel — protecting digital identity through behavioral intelligence.</em></p>
+<p align="center">
+  <img src="assets/closing-banner.webp" alt="YAQITH Sentinel — protecting digital identity, empowering digital transformation" width="900"/>
+</p>
