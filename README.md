@@ -69,7 +69,7 @@ Every attempt is scored and routed down one of three explainable paths — low r
 silently, medium risk triggers a step-up challenge, and high risk is blocked and flagged.
 
 <p align="center">
-  <img src="assets/decision-logic.webp" alt="Three-path decision logic: low risk silent allow, medium risk challenge, high risk instant block" width="700"/>
+  <img src="assets/decision-logic.png" alt="Three-path decision logic: low risk silent allow, medium risk challenge, high risk instant block" width="700"/>
 </p>
 
 ### Interactive Labs
