@@ -16,10 +16,8 @@
 > [Absher Tuwaiq Hackathon 2025](https://absher.tuwaiq.edu.sa/), and paired with a
 > behavioral-AI analysis notebook over ~500 synthetic login events.
 
-> *يقظ — "vigilant".*
-
 <p align="center">
-  <img src="assets/hero-dashboard.webp" alt="YAQITH Sentinel dashboard — behavioral biometrics, identity confidence, and an adaptive login prompt" width="900"/>
+  <img src="assets/hero-dashboard.png" alt="YAQITH Sentinel dashboard — behavioral biometrics, identity confidence, and an adaptive login prompt" width="900"/>
 </p>
 
 ## Overview
@@ -158,7 +156,3 @@ of Interior and Tuwaiq Academy in support of **Saudi Vision 2030**.
 ---
 
 Released under the [MIT License](./LICENSE).
-
-<p align="center">
-  <img src="assets/closing-banner.webp" alt="YAQITH Sentinel — protecting digital identity, empowering digital transformation" width="900"/>
-</p>
