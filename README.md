@@ -49,10 +49,6 @@ flow live.
 | Risk scoring | How likely is this the genuine user, right now? |
 | Adaptive response | Allow silently, challenge, or block — and why? |
 
-<p align="center">
-  <img src="assets/solution-architecture.webp" alt="The solution and intelligence pipeline: device signals flow through orchestration and a real-time decision engine into allow / challenge / block" width="560"/>
-</p>
-
 ## Features
 
 ---
