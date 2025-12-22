@@ -72,17 +72,6 @@ silently, medium risk triggers a step-up challenge, and high risk is blocked and
   <img src="assets/decision-logic.png" alt="Three-path decision logic: low risk silent allow, medium risk challenge, high risk instant block" width="700"/>
 </p>
 
-### Interactive Labs
-
-| Module | Description |
-|--------|-------------|
-| **Biometrics Lab** | Live behavioral-biometrics demo — typing cadence and mouse linearity, human vs. bot |
-| **ZKP Visualizer** | Zero-Knowledge Proof flow — verify identity without exposing the secret |
-
-<p align="center">
-  <img src="assets/zkp-privacy.webp" alt="Privacy by design: zero-knowledge-proof concept — verification without exposing the secret" width="640"/>
-</p>
-
 ## Behavioral AI
 
 ---
