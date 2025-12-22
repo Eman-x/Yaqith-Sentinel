@@ -33,10 +33,6 @@
 > to a correct login from the right one. YAQITH treats **every** session as untrusted until
 > behavior proves otherwise — a zero-trust posture for e-government scale.
 
-<p align="center">
-  <img src="assets/problem-insight.webp" alt="The problem: static credentials fail silently. The insight: identity is a continuous signal." width="640"/>
-</p>
-
 The system reads real-time signals — device identity, IP and location, typing cadence,
 navigation timing, login history — scores the risk of each attempt, and adapts its response:
 **allow**, **step-up challenge**, or **block**. This repository is the **admin command
