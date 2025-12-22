@@ -1,11 +1,15 @@
-# YAQITH Sentinel
+<p align="center">
+  <a href="https://absher.tuwaiq.edu.sa/"><img src="https://img.shields.io/badge/Absher_Tuwaiq-Hackathon_2025-006C5B?style=flat-square" alt="Absher Tuwaiq Hackathon 2025"/></a>
+  <a href="https://www.vision2030.gov.sa/"><img src="https://img.shields.io/badge/Saudi_Vision-2030-C6A664?style=flat-square" alt="Saudi Vision 2030"/></a>
+  <a href="https://react.dev/"><img src="https://img.shields.io/badge/React-19-61DAFB?style=flat-square&logo=react&logoColor=white" alt="React 19"/></a>
+  <a href="https://www.typescriptlang.org/"><img src="https://img.shields.io/badge/TypeScript-5.8-3178C6?style=flat-square&logo=typescript&logoColor=white" alt="TypeScript"/></a>
+  <a href="https://vite.dev/"><img src="https://img.shields.io/badge/Vite-6-646CFF?style=flat-square&logo=vite&logoColor=white" alt="Vite"/></a>
+  <a href="https://supabase.com/"><img src="https://img.shields.io/badge/Supabase-realtime-3FCF8E?style=flat-square&logo=supabase&logoColor=white" alt="Supabase"/></a>
+</p>
 
-[![Hackathon](https://img.shields.io/badge/Absher_Tuwaiq-Hackathon_2025-006C5B?style=flat-square)](https://absher.tuwaiq.edu.sa/)
-[![Vision 2030](https://img.shields.io/badge/Saudi_Vision-2030-C6A664?style=flat-square)](https://www.vision2030.gov.sa/)
-![React](https://img.shields.io/badge/React-19-61DAFB?style=flat-square&logo=react&logoColor=white)
-![TypeScript](https://img.shields.io/badge/TypeScript-5.8-3178C6?style=flat-square&logo=typescript&logoColor=white)
-![Vite](https://img.shields.io/badge/Vite-6-646CFF?style=flat-square&logo=vite&logoColor=white)
-![Supabase](https://img.shields.io/badge/Supabase-realtime-3FCF8E?style=flat-square&logo=supabase&logoColor=white)
+<h1 align="center">YAQITH Sentinel</h1>
+
+<p align="center"><strong>AI-Powered Adaptive Authentication Command Center</strong></p>
 
 ---
 
