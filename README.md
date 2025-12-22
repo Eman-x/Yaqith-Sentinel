@@ -59,10 +59,6 @@ flow live.
 | **Decision Engine** | Visual flow of how risk factors combine into an allow/challenge/block decision |
 | **Risk Policies** | Configurable thresholds and response rules |
 
-<p align="center">
-  <img src="assets/command-center.webp" alt="Admin command center: live dashboard with threat analytics and biometrics panels" width="560"/>
-</p>
-
 ### Decision Logic
 
 Every attempt is scored and routed down one of three explainable paths — low risk passes
